@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wassup chat app</title>
+    <link rel="shortcut icon" href="/wassup.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section class="chat__section">
+      <div class="brand">
+        <img height="40" src="/wassup.png" alt="whatsapp-logo.png" />
+        <div class="userInfo"></div>
+      </div>
+      <div class="message__area"></div>
+      <div class="send__area">
+        <textarea
+          name=""
+          id="textarea"
+          cols="30"
+          rows="1"
+          placeholder="Write a message"
+        ></textarea>
+        <button id="sendBtn">Send</button>
+      </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

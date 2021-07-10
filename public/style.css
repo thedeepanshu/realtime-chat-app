@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+}
+
+section.chat__section {
+  width: 800px;
+  max-width: 90%;
+  background: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+}
+
+.userInfo {
+  padding: 5px 10px;
+  min-width: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.userInfo h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #8f8f8f;
+  font-size: 15px;
+}
+
+.userInfo .online {
+  width: 10px;
+  height: 10px;
+  background: #05b714;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.message__area {
+  height: 500px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-top: 40px;
+}
+
+.send__area {
+  display: flex;
+}
+
+.send__area button {
+  background: #8f8be8;
+  color: #f1f1f1;
+  outline: none;
+  border: none;
+  min-width: 100px;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+}
+
+textarea {
+  width: calc(100% - 100px);
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  outline: none;
+  background: #fbfbfb;
+  border-top: 3px solid #f1f1f1;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+  opacity: 0;
+}
+
+.message {
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  max-width: 300px;
+  position: relative;
+}
+
+.incoming {
+  background: #8f8be8;
+  color: #fff;
+}
+
+.outgoing {
+  background: #e9eafd;
+  color: #787986;
+  margin-left: auto;
+}
+
+.message h4 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: #333;
+  font-size: 14px;
+}
